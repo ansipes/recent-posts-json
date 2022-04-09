@@ -17,7 +17,6 @@ npm run recent-posts
 The `/util/build-recent-posts.js` utility script is executed by `/.github/workflows/cd.yml` with every push to the repository.
 
 ```yml
----
 - name: Setup nodejs
   uses: actions/setup-node@v1
   with:
