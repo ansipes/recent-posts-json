@@ -72,7 +72,8 @@ const getJson = (pathToFile) => {
         const imgWidth = getMeta(dom, "image:width") || "1600";
         const imgHeight = getMeta(dom, "image:height") || "900";
         const imgAlt = getMeta(dom, "image:alt") || "";
-        const published = getMeta(dom, "post:published_time") || "0000-00-00";
+        const published =
+          getMeta(dom, "article:published_time") || "0000-00-00";
 
         resolve({
           title,
