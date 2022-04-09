@@ -17,7 +17,12 @@ function buildRecent(articles) {
         <h1>${article.title}</h1>
         <p>${article.description}</p>
         <p>${article.published}</p>
-        <img src="${article.img.src}" alt="${article.img.alt}" width="${article.img.width}" height="${article.img.height}" />
+        <img
+          src="${base}/images/${article.img.src}"
+          alt="${article.img.alt}"
+          width="${article.img.width}"
+          height="${article.img.height}"
+        />
       </article>
     `;
   });
