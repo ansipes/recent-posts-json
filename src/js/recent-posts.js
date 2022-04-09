@@ -21,7 +21,7 @@ function buildRecent(posts) {
       <article>
         <h1>${post.title}</h1>
         <p>${post.description}</p>
-        <p>${article.published}</p>
+        <p>${post.published}</p>
         <img
           src="${base}/images/${post.img.src}"
           alt="${post.img.alt}"
