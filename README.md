@@ -2,6 +2,8 @@
 
 An example of how metadata can be extracted from a directory of HTML files, stored as a JSON file, and requested/rendered on the front-end using JavaScript.
 
+**[Live Demo](https://ansipes.github.io/recent-posts-json/)**
+
 ## Generate
 
 The `/util/build-recent-posts.js` utility script loops through all of the files in the `/src/posts` directory, extracts metadata, and stores it as JSON in `/src/api/recent-posts.json`.
