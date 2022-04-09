@@ -22,6 +22,7 @@ function buildRecent(posts) {
         <h1>${post.title}</h1>
         <p>${post.description}</p>
         <p>${post.published}</p>
+        <p><a href="${base}/${post.url}">Read More</a></p>
         <img
           src="${base}/images/${post.img.src}"
           alt="${post.img.alt}"
