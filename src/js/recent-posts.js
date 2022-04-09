@@ -1,4 +1,8 @@
-fetch("../api/recent-posts.json")
+const base = window.location.href.includes("github.io")
+  ? `/${window.location.pathname.split("/")[1]}`
+  : "";
+
+fetch(`${base}/api/recent-posts.json`)
   .then((response) => response.json())
   .then((articles) => buildRecent(articles));
 
