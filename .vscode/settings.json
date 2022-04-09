@@ -15,10 +15,5 @@
   },
   "git.enableSmartCommit": true,
   "git.postCommitCommand": "sync",
-  "files.exclude": {
-    "**/.gitignore": true,
-    "**/.github": true,
-    "**/.vscode": true
-  },
   "liveServer.settings.root": "/src"
 }

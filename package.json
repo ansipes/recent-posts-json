@@ -1,0 +1,22 @@
+{
+  "name": "recent-posts-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "recent-posts": "node ./util/build-recent-posts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ansipes/recent-posts-json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ansipes/recent-posts-json/issues"
+  },
+  "homepage": "https://github.com/ansipes/recent-posts-json#readme",
+  "devDependencies": {
+    "jsdom": "^19.0.0"
+  }
+}

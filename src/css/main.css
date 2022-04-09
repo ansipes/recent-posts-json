@@ -5,3 +5,15 @@ video {
   width: 100%;
   height: auto;
 }
+
+.container {
+  max-width: 80rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+#recent-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
