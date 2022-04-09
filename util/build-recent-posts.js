@@ -26,20 +26,20 @@ fs.readdir(directory, (err, files) => {
   // Wait for all files to be processed
   Promise.all(promises).then((data) => {
     // Filter out any falsy entries
-    let articles = data.filter((d) => !!d);
+    let posts = data.filter((d) => !!d);
 
-    // Sort the articles by date
-    articles.sort((a, b) => new Date(b.published) - new Date(a.published));
+    // Sort the posts by date
+    posts.sort((a, b) => new Date(b.published) - new Date(a.published));
 
     // Make the api directory if it does not yet exist
     fs.mkdir("./src/api", { recursive: true }, (err) => {
       if (err) throw err;
     });
 
-    // Write the metadata from each article as a single JSON file
+    // Write the metadata from each post as a single JSON file
     fs.writeFile(
       "./src/api/recent-posts.json",
-      JSON.stringify(articles),
+      JSON.stringify(posts),
       { flag: "w" },
       (err) => {
         if (err) {
@@ -72,8 +72,7 @@ const getJson = (pathToFile) => {
         const imgWidth = getMeta(dom, "image:width") || "1600";
         const imgHeight = getMeta(dom, "image:height") || "900";
         const imgAlt = getMeta(dom, "image:alt") || "";
-        const published =
-          getMeta(dom, "article:published_time") || "0000-00-00";
+        const published = getMeta(dom, "post:published_time") || "0000-00-00";
 
         resolve({
           title,
