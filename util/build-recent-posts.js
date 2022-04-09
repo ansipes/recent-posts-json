@@ -40,7 +40,7 @@ fs.readdir(directory, (err, files) => {
     fs.writeFile(
       "./src/api/recent-posts.json",
       JSON.stringify(articles),
-      { flag: "wx" },
+      { flag: "w" },
       (err) => {
         if (err) {
           console.error(err);
